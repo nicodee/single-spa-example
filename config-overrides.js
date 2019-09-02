@@ -5,12 +5,5 @@ module.exports = function override(config) {
       default: false
     }
   };
-
-  config.devServer = {
-    ...config.devServer,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    }
-  }
   return config;
 };
